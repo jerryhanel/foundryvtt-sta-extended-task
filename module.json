@@ -17,5 +17,6 @@
   "esmodules": [
     "module.js"
   ],
-  "manifest": "https://raw.githubusercontent.com/jerryhanel/foundryvtt-sta-extended-task/main/module.json"
+  "manifest": "https://raw.githubusercontent.com/jerryhanel/foundryvtt-sta-extended-task/main/module.json",
+  "download": "https://github.com/jerryhanel/foundryvtt-sta-extended-task/archive/refs/heads/main.zip"
 }
