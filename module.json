@@ -1,0 +1,20 @@
+{
+  "id": "sta-gmjerry-extended-task",
+  "title": "STA: GM Jerry: Extended Tasks",
+  "description": "A tool for Star Trek Adventures to manage extended tasks and work tracks.",
+  "authors": [
+    {
+      "name": "GM Jerry"
+	  "url": "https://foundryvtt.com/community/fabulist",
+      "flags": {}
+    }
+  ],
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "9",
+    "verified": "10"
+  }
+  "esmodules": [
+    "module.js"
+  ],
+}
