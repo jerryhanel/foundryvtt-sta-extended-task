@@ -46,19 +46,6 @@ class STAExtendedTaskSheetGMJerry extends ActorSheet {
 		this.render();
 	}
 
-	/* -------------------------------------------- */
-	/** @override 
-	get template() {
-        if (game.user.isGM)
-        {
-            return `modules/sta-gmjerry-extended-task/templates/extended-task-sheet-gmjerry.html`;
-        }
-
-        return `modules/sta-gmjerry-extended-task/templates/extended-task-sheet-summary.html`;
-	}
-
-	/* -------------------------------------------- */
-
 	/** @override */
 	getData() {
 		const context = super.getData();
