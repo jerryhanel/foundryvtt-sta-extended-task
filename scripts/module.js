@@ -20,5 +20,8 @@ Hooks.on("init", () => {
 });
 
 Hooks.on("ready", () => {
+	// Register sheet application classes
+	Actors.registerSheet("sta", STAExtendedTaskSheetGMJerry, { makeDefault: false });
+	
   console.log("sta-gmjerry-extended-task | Initialization complete!");
 });

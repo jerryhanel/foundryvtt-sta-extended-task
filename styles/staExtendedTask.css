@@ -1,0 +1,97 @@
+.lcars-footer {
+	width: 100%; 
+	border-color: #00273f;
+	border-style: solid;
+	border-width: 0 0 24px 6px;
+	border-radius: 0 0 0 12px;
+	margin-bottom: 5px;
+}
+.column-headerfields1-name-extendedtasks {
+	width: 100%;
+}
+.column-headerfields1-name-extendedtasks td {
+	text-align: center;
+}
+.extendedtask-description-header {
+	width: calc(100% - 30px);
+	font-weight: bold;
+	font-size: large;
+}
+.extendedtask-description-close {
+	width: 27px;
+	width: 27px;
+	float: right;
+}
+.extendedtask-description {
+	width: 100%;
+}
+.extendedtask-description .row2 {
+	width: 100%;
+	flex-basis: 100%;
+}
+.extendedtask-description .numeric-entry {
+	width: 45px;
+}
+.lcars-row {
+	display: flex;
+	margin-top: 15px;
+}
+.lcars-row-continue {
+	display: flex;
+}
+.lcars-row-continue .lcars-column {
+	padding-bottom: 24px;
+	border-radius: 0 0 0 12px !important;
+}
+.lcars-table-header {
+	padding: 5px 0 0 10px;
+	font-weight: bolder;
+	background-color: #00273f;
+	flex-basis: 100%;
+	border-radius: 12px 0 0 0;
+}
+.extendedtask .track {
+	margin-right: 5px;
+}
+.boxWork, .boxBt {
+	border: 1px solid #666688 !important;
+	margin: 2px !important;
+}
+.row2 {
+	display: flex;
+	flex-direction: row;
+}
+.column2 {
+	flex: 12px;
+	margin-right: 5px;
+}
+.row2-continue {
+	display: flex;
+	flex-direction: row;
+	border-color: #00273f;
+	border-style: solid;
+	border-width: 0 0 0 6px;
+	flex: 12px;
+	flex-grow: 0;
+	flex-shrink: 1;
+}
+.lcars-content {
+	padding: 5px;
+	width: 100%;
+}
+.extendedtask-renderer {
+	height: 150px;
+}
+.largerFont { 
+	font-size: 22px;
+	font-family: 'Teko';
+}
+.sta-extended-task {
+	text-align: center;
+}
+.sta-extended-task input[type='text'] {
+	text-align: center;
+}
+.sta-extended-task td input[type='number'] {
+	text-align: center !important;
+}
