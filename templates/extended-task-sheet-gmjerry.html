@@ -43,20 +43,20 @@
 	</div>
     <div class="row2 4"  class="extendedtask-description">
 	  <div class="extendedtask-description">
-		  <div class="extendedtask-description row2">
+		<div class="extendedtask-description row2">
 			<div class="lcars-table-header"> How do extended tasks work? </div>
 			<div class="extendedtask-description-close"> 
-			   <button
-				 type="button"
-				 class="hide"
-				 title="Hide description"
-				 data-action="hide-description"
-			   >
-				 <i class="fas {{system.extendedTaskDescriptionDisplayButton}}"></i>
-			   </button>
+				<button
+					type="button"
+					class="hide"
+					title="Hide description"
+					data-action="hide-description"
+				>
+					<i class="fas {{system.extendedTaskDescriptionDisplayButton}}"></i>
+				</button>
 			</div>
-		  </div>
-		  <div class="row2-continue lcars-content" style="display: {{system.extendedTaskDescriptionDisplay}}">
+			</div>
+			<div class="row2-continue lcars-content" style="display: {{system.extendedTaskDescriptionDisplay}}">
 			<table>
 				<tr><th width="50%">Work</th><th width="50%">Breakthroughs</th></tr>
 				<tr>
@@ -76,8 +76,10 @@
 						- 20, and Critical Successes happen as normal for a task roll (i.e. include focus).
 					</td>
 					<td>				
-						Critical Successes and Critical Failures cancel each other out. After cancelling, if you have critical failures remaining, the task fails. 
-						However, for each critical success remaining, you earn a breakthrough. 
+						Critical Successes and Critical Failures cancel each other out. After cancelling:
+						<li> (A) ... if you have critical failures remaining, you do not earn any work OR any breakthroughs. </li>
+						<li> (B) ... if you break even, then you sum up your successes as "work" minus resistance.
+						<li> (C) ... if you have Critical Success remaining, then you earn one breakthrough for each critical success remaining. 
 					</td>				
 				</tr>
 				<tr>
@@ -89,8 +91,8 @@
 						(Resistance is applied by removing one success for each point of resistance when adding up successes.)
 					</td>
 					<td>
-						If you have surplus critical successes OR you succeeded the task difficulty, roll the number of challenge dice based on the primary 
-						discipline <B><U>PLUS 2 additional dice for that task.</U></B> 
+						If you have surplus or even critical successes OR you succeeded the task difficulty, roll the number of challenge dice based on the primary 
+						discipline <B><U>PLUS 2 additional dice.</U></B> 
 					</td>
 				<tr>
 					<td>
@@ -110,10 +112,8 @@
 					You succeed at the task when you complete <b><u><i>either</i></u></b> the work track or the breakthrough track.
 				</td></tr>
 			</table>
-		  </div>
-		  <div class="lcars-footer"  style="display: {{system.extendedTaskDescriptionDisplay}}"></div>
+			</div>
+			<div class="lcars-footer"  style="display: {{system.extendedTaskDescriptionDisplay}}"></div>
 		</div>
 	</div>
-
-
 </form>
