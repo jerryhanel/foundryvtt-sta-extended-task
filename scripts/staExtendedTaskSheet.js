@@ -46,19 +46,6 @@ class STAExtendedTaskSheetGMJerry extends ActorSheet {
 		this.render();
 	}
 
-	/* -------------------------------------------- */
-	/** @override 
-	get template() {
-        if (game.user.isGM)
-        {
-            return `modules/sta-gmjerry-extended-task/templates/extended-task-sheet-gmjerry.html`;
-        }
-
-        return `modules/sta-gmjerry-extended-task/templates/extended-task-sheet-summary.html`;
-	}
-
-	/* -------------------------------------------- */
-
 	/** @override */
 	getData() {
 		const context = super.getData();
@@ -71,6 +58,9 @@ class STAExtendedTaskSheetGMJerry extends ActorSheet {
 
 		this.object.dtypes = ['String', 'Number', 'Boolean'];
 
+		console.log("sheetData.system", sheetData.system);
+
+		if (sheetData.system.defaultDiscipline == "") sheetData.system.defaultDiscipline = "Command";
 		if (sheetData.system.magnitude <= 0) sheetData.system.magnitude = 10;
 		if (sheetData.system.resistance <= 0) sheetData.system.resistance = 0;
 		if (sheetData.system.difficulty <= 0) sheetData.system.difficulty = 2;

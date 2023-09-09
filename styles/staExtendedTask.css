@@ -79,6 +79,9 @@
 	padding: 5px;
 	width: 100%;
 }
+.lcars-content td {
+	padding: 5px;
+}
 .extendedtask-renderer {
 	height: 150px;
 }

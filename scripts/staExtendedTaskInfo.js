@@ -2,6 +2,7 @@ console.log("sta-extended-task-gmjerry | STA Extended Tasks INFO, loaded.");
 
 class STAExtendedTaskInfo {
 	configured = true;
+	defaultDiscipline = "";
 	magnitude = 10;
     resistance = 0;
 	difficulty = 2;
