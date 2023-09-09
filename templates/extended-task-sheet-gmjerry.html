@@ -1,25 +1,36 @@
 <form class="{{cssClass}}" autocomplete="off">
   <div class="main-content sta-extended-task" >
 	<div class="largerFont">
-		<div class="row2 1 lcars-table-header"><label class="label">{{localize 'sta.item.genericitem.name'}}</label></div>
+		<div class="row2 1 lcars-table-header">
+			<label class="label">{{localize 'sta.item.genericitem.name'}}:</label>
+			<input name="name" type="text" class="text-entry" value="{{name}}" placeholder="{{localize 'sta.item.genericitem.name'}}" />
+		</div>
+		<div class="row2-continue"><label class="label">Default Discipline</label></div>
 		<div class="row2-continue">
 			<div class="lcars-content">
-				<input name="name" type="text" class="text-entry" value="{{name}}" placeholder="{{localize 'sta.item.genericitem.name'}}" />
-				<br/>
-				<table>
-					<tr>
-						<td style="width:25%"><label class="label">{{localize 'sta.actor.extendedtask.magnitude'}} <br/> (small:2, large:5)</label></td>
-						<td style="width:25%"><label class="label">{{localize 'sta.actor.extendedtask.resistance'}}<br/> (default:0)</label></td>	
-						<td style="width:25%"><label class="label">{{localize 'sta.actor.extendedtask.difficulty'}}<br/> (normal:2, impossible:5)</label></td>
-						<td style="width:25%"><label class="label">Complication Range (default:0)</label></td>
-					</tr><tr>
-						<td style="width:25%"><input name="system.magnitude"         type="number" id="magnitude"         class="numeric-entry" value="{{system.magnitude}}" min="0" data-dtype="Number" /></td>
-						<td style="width:25%"><input name="system.resistance"        type="number" id="resistance"        class="numeric-entry" value="{{system.resistance}}" min="0" data-dtype="Number" /></td>
-						<td style="width:25%"><input name="system.difficulty"        type="number" id="difficulty"        class="numeric-entry" value="{{system.difficulty}}" min="0" data-dtype="Number" /></td>
-						<td style="width:25%"><input name="system.complicationRange" type="number" id="complicationRange" class="numeric-entry" value="{{system.complicationRange}}" min="0" data-dtype="Number" /></td>
-					</tr>
-				</table>
+				<input name="system.defaultDiscipline" type="text" class="text-entry" value="{{system.defaultDiscipline}}" placeholder="Default Discipline" />
 			</div>
+		</div>
+		<div class="row2-continue"><label class="label">Hidden Notes</label></div>
+		<div class="row2-continue">
+			<div class="lcars-content">
+				<textarea name="system.notes" class="text-entry" placeholder="Hidden Notes" rows="5">{{system.notes}}</textarea>
+			</div>
+		</div>
+		<div class="row2-continue">
+			<table>
+				<tr>
+					<td style="width:25%"><label class="label">{{localize 'sta.actor.extendedtask.magnitude'}} <br/> (small:2, large:5)</label></td>
+					<td style="width:25%"><label class="label">{{localize 'sta.actor.extendedtask.resistance'}}<br/> (default:0)</label></td>	
+					<td style="width:25%"><label class="label">{{localize 'sta.actor.extendedtask.difficulty'}}<br/> (normal:2, impossible:5)</label></td>
+					<td style="width:25%"><label class="label">Complication Range (default:0)</label></td>
+				</tr><tr>
+					<td style="width:25%"><input name="system.magnitude"         type="number" id="magnitude"         class="numeric-entry" value="{{system.magnitude}}" min="0" data-dtype="Number" /></td>
+					<td style="width:25%"><input name="system.resistance"        type="number" id="resistance"        class="numeric-entry" value="{{system.resistance}}" min="0" data-dtype="Number" /></td>
+					<td style="width:25%"><input name="system.difficulty"        type="number" id="difficulty"        class="numeric-entry" value="{{system.difficulty}}" min="0" data-dtype="Number" /></td>
+					<td style="width:25%"><input name="system.complicationRange" type="number" id="complicationRange" class="numeric-entry" value="{{system.complicationRange}}" min="0" data-dtype="Number" /></td>
+				</tr>
+			</table>
 		</div>
 	</div>
 	<div class="row2 1 lcars-footer"></div>
